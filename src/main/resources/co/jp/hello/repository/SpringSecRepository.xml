@@ -5,7 +5,11 @@
 	namespace="co.jp.hello.repository.SpringSecRepository">
 	
 <select id="getUserList" resultType="co.jp.hello.dto.UserDto">
-   select*from users;
+   select user_id as userId,
+   		  user_nm as userNm,
+	email as email,
+	password as password
+   from users;
 </select>
 
 
